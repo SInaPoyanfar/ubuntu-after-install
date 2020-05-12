@@ -1,0 +1,4 @@
+installing variety
+installing tweak extensions
+installing docker
+installing shadowsocks
