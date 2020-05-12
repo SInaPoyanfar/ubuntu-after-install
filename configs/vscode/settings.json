@@ -1,0 +1,93 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.minimap.enabled": false,
+    "editor.renderIndentGuides": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.watcherExclude": {
+      "**/.git/objects/**": true,
+      "**/.git/subtree-cache/**": true,
+      "**/node_modules/**": true,
+      "**/.hg/store/**": true
+    },
+    "files.exclude": {
+      "/.git": true,
+      "/.svn": true,
+      "/.hg": true,
+      "/CVS": true,
+      "/.DS_Store": true,
+      "/*.js": {
+        "when": "$(basename).ts"
+      }
+    },
+    "todohighlight.keywords": [
+      "DEBUG:",
+      "REVIEW:",
+      {
+        "text": "NOTE:",
+        "color": "#ff0000",
+        "backgroundColor": "yellow",
+        "overviewRulerColor": "grey"
+      },
+      {
+        "text": "HACK:",
+        "color": "#000",
+        "isWholeLine": false,
+      },
+      {
+        "text": "TODO:",
+        "color": "black",
+        "border": "1px solid black",
+        "backgroundColor": "yellow",
+        "isWholeLine": true,
+      },
+      {
+        "text": "FIXME:",
+        "color": "black",
+        "backgroundColor": "pink",
+        "isWholeLine": true
+      }
+    ],
+    "[html]": {
+      "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[scss]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[json]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "window.zoomLevel": 0,
+    "typescript.updateImportsOnFileMove.enabled": "prompt",
+    "editor.cursorSurroundingLines": 5,
+    "terminal.integrated.cursorBlinking": true,
+    "editor.fontFamily": "'Hack', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "files.autoSave": "onWindowChange",
+    "code-runner.runInTerminal": true,
+    "editor.selectionClipboard": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "explorer.compactFolders": false,
+    "diffEditor.renderSideBySide": true,
+    "todo-tree.tree.showScanModeButton": true,
+    "cSpell.userWords": [
+      "Conv",
+      "Flexbox",
+      "dtos",
+      "imread",
+      "nestjs",
+      "numpy",
+      "pyplot"
+    ],
+    "editor.tabSize": 2,
+    "workbench.colorTheme": "Neon Vommit",
+    "workbench.colorCustomizations": {},
+    "nativescript.analytics.enabled": true,
+    "python.jediEnabled": false,
+    "kite.showWelcomeNotificationOnStartup": false
+  }
