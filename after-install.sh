@@ -45,7 +45,7 @@ sudo apt-get install -y nodejs
 apt install privoxy -y
 mv /etc/privoxy/config /etc/privoxy/config.bak
 cp -v ./configs/privoxy/config /etc/privoxy/config
-# TODO: install shadowsocks 
+pip3 install shadowsocks
 
 # installing vscode
 snap install code --classic
