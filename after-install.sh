@@ -95,6 +95,22 @@ snap install discord
 # installing android studio
 snap install android-studio --classic
 
+echo -e "\033[43m \033[30m Make sure your proxy in on and is set to 1080 to install docker. \033[0m"
+read -p 'did you turn your proxy on(y/n): ' proxy_is_on
+while [ proxy_is_on -ne "y" && proxy_is_on -ne 'Y' ]; do
+    echo -e "\033[43m \033[30m Make sure your proxy in on and is set to 1080 to install docker. \033[0m"
+    read -p 'did you turn your proxy on(y/n): ' proxy_is_on
+done
+
+# installing docker
+apt remove docker docker-engine docker.io containerd runc -y
+apt install apt-transport-https ca-certificates curl gnupg-agent software-properties-common -y
+sudo -u $user curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+apt update
+apt install docker-ce docker-ce-cli containerd.io
+usermod -aG docker $user
+
 # installing variety
 add-apt-repository ppa:peterlevi/ppa -y
 apt install variety -y
