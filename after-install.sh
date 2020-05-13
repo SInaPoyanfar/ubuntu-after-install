@@ -91,6 +91,10 @@ snap install discord
 # installing android studio
 snap install android-studio --classic
 
+# installing variety
+add-apt-repository ppa:peterlevi/ppa -y
+apt install variety -y
+
 apt autoclean
 apt autoclear
 

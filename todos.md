@@ -1,4 +1,3 @@
-installing variety
 installing tweak extensions
 installing docker
 make it optional on installation
