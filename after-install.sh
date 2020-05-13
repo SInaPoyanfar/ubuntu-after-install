@@ -46,6 +46,9 @@ apt install privoxy -y
 mv /etc/privoxy/config /etc/privoxy/config.bak
 cp -v ./configs/privoxy/config /etc/privoxy/config
 pip3 install shadowsocks
+apt install proxychains
+mv /etc/proxychains.conf /etc/proxychains.conf.bak
+cp ./configs/proxychains/proxychains.conf /etc/proxychains.conf
 
 # installing vscode
 snap install code --classic
