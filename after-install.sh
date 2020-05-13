@@ -81,8 +81,8 @@ fc-cache -f -v
 echo -e "\033[43m \033[30m type exit to continue the installation \033[0m"
 rm -rf /home/$CURRENT_USER/.oh-my-zsh
 sudo -u $CURRENT_USER sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
-ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+sudo -u $CURRENT_USER git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+sudo -u $CURRENT_USER ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /home/$CURRENT_USER/.zsh-syntax-highlighting
 mv /home/$CURRENT_USER/.zshrc /home/$CURRENT_USER/.zshrc.bak
 cp ./configs/zsh/zshrc /home/$CURRENT_USER/.zshrc 
