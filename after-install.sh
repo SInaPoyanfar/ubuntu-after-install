@@ -46,6 +46,7 @@ apt install privoxy -y
 mv /etc/privoxy/config /etc/privoxy/config.bak
 cp -v ./configs/privoxy/config /etc/privoxy/config
 service privoxy start
+apt install python-m2crypto
 pip3 install shadowsocks
 apt install proxychains
 mv /etc/proxychains.conf /etc/proxychains.conf.bak
