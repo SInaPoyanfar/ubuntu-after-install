@@ -45,10 +45,13 @@ sudo apt-get install -y nodejs
 apt install privoxy -y
 mv /etc/privoxy/config /etc/privoxy/config.bak
 cp -v ./configs/privoxy/config /etc/privoxy/config
+service privoxy start
 pip3 install shadowsocks
 apt install proxychains
 mv /etc/proxychains.conf /etc/proxychains.conf.bak
 cp ./configs/proxychains/proxychains.conf /etc/proxychains.conf
+mv /etc/apt/apt.conf.d/proxy.conf /etc/apt/apt.conf.d/proxy.conf.bak
+cp -v ./configs/apt/proxy.conf /etc/apt/apt.conf.d/proxy.conf
 
 # installing vscode
 snap install code --classic
@@ -94,6 +97,8 @@ snap install android-studio --classic
 # installing variety
 add-apt-repository ppa:peterlevi/ppa -y
 apt install variety -y
+
+
 
 apt autoclean
 apt autoclear
