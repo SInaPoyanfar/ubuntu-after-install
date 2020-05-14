@@ -43,7 +43,8 @@ snap install chromium
 apt install unzip
 
 # installing player
-snap install --beta mpv 
+add-apt-repository ppa:mc3man/mpv-tests
+apt install mpv
 
 # installing tweak
 apt install gnome-tweak-tool -y 
