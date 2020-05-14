@@ -17,7 +17,9 @@ apt install gcc g++ -y
 apt install vim -y
 apt install python3-pip -y
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-sudo apt-get install -y nodejs
+apt-get install -y nodejs
+add-apt-repository ppa:linuxuprising/java -y
+apt install oracle-java14-installer 
 
 # proxy stuff
 apt install privoxy -y
